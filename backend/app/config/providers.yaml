@@ -1,0 +1,27 @@
+providers:
+  github:
+    official: true
+    transport: stdio
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+    authentication: oauth
+    discovery: dynamic
+  gmail:
+    official: true
+    transport: streamable_http
+    endpoint: "https://gmailmcp.googleapis.com/mcp/v1"
+    authentication: oauth
+    discovery: dynamic
+  google_drive:
+    official: true
+    transport: streamable_http
+    endpoint: "https://drivemcp.googleapis.com/mcp/v1"
+    authentication: oauth
+    discovery: dynamic
+  google_calendar:
+    official: true
+    transport: streamable_http
+    endpoint: "https://calendarmcp.googleapis.com/mcp/v1"
+    authentication: oauth
+    discovery: dynamic
+
